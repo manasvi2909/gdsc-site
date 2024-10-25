@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music-dash</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body style="background-image: url(bg1.jpg)" class = "flex justify-center items-center min-h-[100vh] h-screen bg-no-repeat bg-cover">
+    <header class = "fixed flex z-99 w-full justify-end top-0">
+        <h2 class = "fixed top-0 left-0 margin-0 mx-10 my-[60px] font-extrabold text-[40px] text-white drop-shadow-lg">musicx</h2>
+        <nav class = "my-5 font-sans font-bold space-x-20 mx-10">
+            <a href = 'index.html' class = "relative text-slate-500 my-10"><span class = "underline-animation">Home</span></a>
+            <a href = 'index.html' class = "relative text-slate-500 my-10"><span class = "underline-animation">About</span></a>
+            <a href = 'index.html' class = "relative text-slate-500 my-10"><span class = "underline-animation">Contact</span></a>
+            <a href = "index.html"><button class = "rounded-lg font-sans font-bold bg-transparent p-2 border-none border-2 outline-none w-32 cursor-pointer text-slate-500 my-10 duration-500 hover:bg-white/40 hover:text-slate-800 after:scale-x-0 hover:scale-x-100">Login</button></a>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="wrapper flex relative w-[400px] h-[440px] bg-transparent border-solid border-2 border-earl-grey rounded-[20px] backdrop-blur shadow-xl justify-center items-center overflow-hidden">
+        <span class = "close-icon absolute top-0 right-0 w-[45px] h-[45px] text-[2em] bg-white/30 text-slate-600 justify-center items-center cursor-pointer rounded-bl-[20px]">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login w-full p-[40px]">
+            <h2 class = "font-sans font-extrabold text-3xl text-center text-[2em]">login</h2>
+            <br>
+            <form action = 'data-page.html'>
+                <div class = "input-1 relative w-full h-[50px] border-b-2 border-solid border-slate-800 my-[30px]">
+                    <span class = "icon"><ion-icon name="person-circle-outline" class = "absolute right-[8px] text-[1.2em] translate-y-1 text-slate-800"></ion-icon></span>
+                    <label for = "username" class = "text-slate-700 font-semibold">Username</label>
+                    <input type = "text" class = "bg-transparent border-none outline-none w-full h-full text-[1em] font-[600]  pt-0 pr-[35px] text-slate-700 pb-5 pl-5" required>
+                </div>
+                <div class = "input-2 my-1 relative w-full h-[50px] border-b-2 border-solid border-slate-800">
+                    <span class = "icon2"><ion-icon name="lock-closed" class = "absolute right-[8px] text-[1.2em] translate-y-1 text-slate-800"></ion-icon></span>
+                    <label for = "password" class = "text-slate-700 font-semibold">Password</label>
+                    <input type = "password" class = "bg-transparent border-none outline-none w-full h-full text-[1em] font-[600] text-slate-700 pt-0 pr-[35px] pb-5 pl-5" required>
+                </div>
+                <button type = "submit" id = "btn" class = "relative w-full bg-white/20 my-3 p-2 font-sans shadow-lg border-transparent rounded-[8px] cursor-pointer font-[600]" onclick = "getInfo()" >Login</button>
+            </form>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+    <script src="bar-chart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
