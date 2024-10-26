@@ -2,7 +2,7 @@
   "devDependencies": {
     "tailwindcss": "^3.4.14"
   },
-  "name": "gdsc-site",
+  "name": "html-starter",
   "version": "1.0.0",
   "description": "beginnings of my webdev html",
   "main": "tailwind.config.js",
@@ -101,7 +101,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC"
