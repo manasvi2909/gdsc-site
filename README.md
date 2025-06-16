@@ -33,15 +33,14 @@ A visually engaging **music dashboard** built with **HTML** and **Tailwind CSS**
 
 ## 🖼️ UI Pages
 
-- `index.html` – Main dashboard view
-- `login.html` – Static login form
-- `dashboard.html` – Analytics overview with charts
+- `index.html` – Static login form
+- `data-page.html` – Analytics overview with charts
 
 ---
 
 ## Notes
 This is a frontend-only project — no backend or database used.
 
-All chart data is static and defined in js/charts.js.
+All chart data is static and defined in script.js.
 
 Login form is non-functional and intended for UI demonstration only.
